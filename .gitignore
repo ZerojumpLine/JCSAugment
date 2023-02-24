@@ -1,0 +1,4 @@
+/datadownload/*
+/datapreprocessed/*
+/.ipynb_checkpoints
+/output/*

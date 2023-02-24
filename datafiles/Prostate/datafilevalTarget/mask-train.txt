@@ -1,0 +1,1 @@
+/vol/biomedic3/zl9518/JCSAugment/datapreprocessed/Prostate/I2CVB/mask/Prostate_Case00.nii.gz
