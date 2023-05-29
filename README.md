@@ -2,7 +2,7 @@
 
 In this work, we improve the current data augmentation strategies for image segmentation with two designs. First, we learn class-specific training-time data augmentation (TRA) effectively increasing the heterogeneity within the training subsets and tackling the class imbalance common in segmentation. Second, we jointly optimize TRA and test-time data augmentation (TEA), which are closely connected as both aim to align the training and test data distribution but were so far considered separately in previous works. We demonstrate the effectiveness of our method on multiple medical image segmentation tasks across different scenarios including multi-domain segmentation and domain generalized segmentation.
 
-<br/> <div align=center><img src="figs/MethodOverview.png" width="700px"/></div>
+<br/> <div align=center><img src="figs/MethodOverview.png" width="500px"/></div>
 
 ## Requirements
 
