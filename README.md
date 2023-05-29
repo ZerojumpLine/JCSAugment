@@ -71,7 +71,7 @@ python train_Deepmedic.py --name Deepmedic_Kits_learnedTEA --tensorboard --split
 python train_Deepmedic.py --name Deepmedic_JCSAugment_Kits_50percent --tensorboard --split 0 --epochs 2000 --dropoutrate 0.5 --sgd0orAdam1orRms2 0 --arch_learning_rate 1e-3 --archts_learning_rate 5e-5 --kits0pros1 0 --org 3 --orgts 2 --softdsc 1 --cs --det --gpu 0
 ```
 
-Note that we can set augupdate larger than 1 to comtrol the update frequency of training-time data augmentation policies, save the training time. Please remember to increase the learning rate for meta-learning correspondingly.
+Note that we can set `augupdate` (default as 1) larger than 1 to control the update frequency of training-time data augmentation policies, to save the training time. Please also remember to increase the learning rate for meta-learning (e.g. `arch_learning_rate` and `archts_learning_rate`) correspondingly.
 
 ### 3D U-Net
 
@@ -102,7 +102,7 @@ python train_nnformer.py --name nnformer_heuristic_Kits_50percent --tensorboard 
 python train_nnformer.py --name nnformer_JCSAugment_Kits_50percent --tensorboard --split 0 --downsampling 3 --deepsupervision --patch-size 64 64 64 --epochs 2000 --sgd0orAdam1orRms2 0 --arch_learning_rate 2e-3 --archts_learning_rate 5e-5 --kits0pros1 0 --org 5 --orgts 2 --softdsc 0 --cs --det --gpu 0
 ```
 
-Note that the users might want to refer the hyperparameters (especially meta-learning learning rate, network settings) to our manucript and supplementary material.
+Note that the users might want to refer to the hyperparameters (especially meta-learning learning rate, network settings) in our manucript and supplementary material.
 
 ## Inference
 
