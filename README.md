@@ -142,6 +142,8 @@ This code borrows from [DeepMedic](https://github.com/deepmedic/deepmedic), [nnU
 
 ## Citation
 
+If you find our work beneficial for your projects, please kindly consider citing it:
+
 ```
 @article{li2023joint,
   title={Joint Optimization of Class-Specific Training- and Test-Time Data Augmentation in Segmentation},
