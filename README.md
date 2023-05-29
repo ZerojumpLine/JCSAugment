@@ -137,7 +137,7 @@ We provide the code to visualize the learned data augmentation policies. Please 
 
 ## Acknowledgement
 
-This code borrows from [DeepMedic](https://github.com/deepmedic/deepmedic), [nn U-Net](https://github.com/MIC-DKFZ/nnUNet) and [nnFormer](https://github.com/282857341/nnFormer).
+This code borrows from [DeepMedic](https://github.com/deepmedic/deepmedic), [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) and [nnFormer](https://github.com/282857341/nnFormer).
 
 
 ## Citation
