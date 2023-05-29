@@ -31,7 +31,7 @@ timm==0.6.12
 
 ## Data and preprocessing
 
-Download medical images with the following links: [ATLAS](http://fcon_1000.projects.nitrc.org/indi/retro/atlas.html), [KiTS19](https://github.com/neheller/kits19), [organ CT](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), [cross-site prostate MRI](https://liuquande.github.io/SAML/), [cross-sequence cardiac MRI](http://www.sdspeople.fudan.edu.cn/zhuangxiahai/0/mscmrseg19/data.html) and [cross-ste cardiac MRI](https://www.ub.edu/mnms/).
+Download medical images with the following links: [ATLAS](http://fcon_1000.projects.nitrc.org/indi/retro/atlas.html), [KiTS19](https://github.com/neheller/kits19), [organ CT](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), [cross-site prostate MRI](https://liuquande.github.io/SAML/), [cross-sequence cardiac MRI](https://zmiclab.github.io/zxh/0/mscmrseg19/data.html) and [cross-ste cardiac MRI](https://www.ub.edu/mnms/).
 
 We provide some preprocessing scripts for some of the MRI or CT datasets. Please download the datasets to `./datadownload/` and refer to `datapreprocessing_KiTS.ipynb`, `datapreprocessing_Prostate.ipynb` and `datapreprocessing_MnMCardiac.ipynb`. The results would be saved in `./datapreprocessed`.
 
