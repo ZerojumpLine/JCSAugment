@@ -39,7 +39,7 @@ if __name__ == '__main__':
         else:
             DatafileValFold = './datafiles/KiTS/datafiletest/'
     if args.kits0pros1 == 1:
-        from common_functions.common_Unet_test import validateprostate as test
+        from common_functions.common_Unet_test import testprostate as test
         NumsInputChannel = 1
         NumsClass = 2
         if args.trainval:
@@ -51,7 +51,7 @@ if __name__ == '__main__':
         NumsInputChannel = 1
         NumsClass = 4
         if args.trainval:
-            DatafileValFold='./datafiles/MnMCardiac/datafiletrainingSource/'
+            DatafileValFold='./datafiles/MnMCardiac/datafiletestSource/'
         else:
             DatafileValFold='./datafiles/MnMCardiac/datafiletestTarget/'
 

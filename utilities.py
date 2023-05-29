@@ -863,7 +863,7 @@ def printaugment(samplemodel, samplemodel_ts, args, logging):
     # no need to print the policies, if we dont want it to transfer to DM.
     # printpolicies(logging, policyprob)
     ## this is for test augmentation, also output the best 8 indexes.
-    policyprob_ts = F.softmax(samplemodel_ts.outwn, dim=0).data.cpu().numpy()
+    policyprob_ts = F.softmax(samplemodel_ts.outwn, dim=0).data.cpu().numpy() * 84 # totally 84 transformations
     rawweights_ts = samplemodel_ts.outwn.data.cpu().numpy()
     sort_index = np.argsort(rawweights_ts)[::-1]
     logging.info('The indexes for test-time augmentation = %s', sort_index)

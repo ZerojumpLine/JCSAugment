@@ -496,9 +496,9 @@ def testcardiac(model, saveresults, name, trainval = False, ImgsegmentSize = [80
         DatafileMask = DatafileFold + 'mask-eval.txt'
     else:
         DatafileFold = DatafileValFold
-        DatafileImgc1 = DatafileFold + 'Imgpre-train.txt'
-        DatafileLabel = DatafileFold + 'seg-train.txt'
-        DatafileMask = DatafileFold + 'mask-train.txt'
+        DatafileImgc1 = DatafileFold + 'Imgpre-eval.txt'
+        DatafileLabel = DatafileFold + 'seg-eval.txt'
+        DatafileMask = DatafileFold + 'mask-eval.txt'
 
     Imgfilec1 = open(DatafileImgc1)
     Imgreadc1 = Imgfilec1.read().splitlines()
