@@ -449,14 +449,15 @@ def getaugmentpath(Imgenlarge, Labelenlarge, kimg, k, selindex_x, selindex_y, se
         LbltoSample = Labelenlarge.copy()
 
     # note that for cardiac segmentation, with anisotropy patchsize 8 * 128 * 128, we do not want rot90 in xy or yz.
-    if LabelsegmentSize[0] != LabelsegmentSize[1]:
-        augsample = {'prob': 1.,
-                    'hist_dist': {'shift': {'mu': augsample['hist_dist']['shift']['mu'], 'std': 0.}, 'scale': {'mu': augsample['hist_dist']['scale']['mu'], 'std': 0.}},
-                    'contrast': {'factor': augsample['contrast']['factor']}, 'reflect': (augsample['reflect'][0], augsample['reflect'][1], augsample['reflect'][2]), 'blur': {'sigma': augsample['blur']['sigma'], 'sharpen': augsample['blur']['sharpen']},
-                    'rotate90': {'xy': {'0': 0., '90': 0., '180': augsample['rotate90']['xy']['180'], '270': 0.},
-                                'yz': {'0': 0., '90': augsample['rotate90']['yz']['90'], '180': augsample['rotate90']['yz']['180'], '270': augsample['rotate90']['yz']['270']},
-                                'xz': {'0': 0., '90': 0., '180': augsample['rotate90']['xz']['180'], '270': 0.}},
-                    'noise': {'std': augsample['noise']['std']}, 'gamma': {'gamma': augsample['gamma']['gamma'], 'invgamma': augsample['gamma']['invgamma']}, 'simulowres': {'zoom': augsample['simulowres']['zoom']}}
+    # This is I implemented for cross-sequence MRI, but may be not nessceary, and all image should be sampled to xyz
+    # if LabelsegmentSize[0] != LabelsegmentSize[1]:
+    #     augsample = {'prob': 1.,
+    #                 'hist_dist': {'shift': {'mu': augsample['hist_dist']['shift']['mu'], 'std': 0.}, 'scale': {'mu': augsample['hist_dist']['scale']['mu'], 'std': 0.}},
+    #                 'contrast': {'factor': augsample['contrast']['factor']}, 'reflect': (augsample['reflect'][0], augsample['reflect'][1], augsample['reflect'][2]), 'blur': {'sigma': augsample['blur']['sigma'], 'sharpen': augsample['blur']['sharpen']},
+    #                 'rotate90': {'xy': {'0': 0., '90': 0., '180': augsample['rotate90']['xy']['180'], '270': 0.},
+    #                             'yz': {'0': 0., '90': augsample['rotate90']['yz']['90'], '180': augsample['rotate90']['yz']['180'], '270': augsample['rotate90']['yz']['270']},
+    #                             'xz': {'0': 0., '90': 0., '180': augsample['rotate90']['xz']['180'], '270': 0.}},
+    #                 'noise': {'std': augsample['noise']['std']}, 'gamma': {'gamma': augsample['gamma']['gamma'], 'invgamma': augsample['gamma']['invgamma']}, 'simulowres': {'zoom': augsample['simulowres']['zoom']}}
 
     '''
     Here, I want to make sure it is compatable with anisotropy patches, such as 160*160*80
