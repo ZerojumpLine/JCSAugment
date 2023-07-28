@@ -4,29 +4,27 @@ In this work, we improve the current data augmentation strategies for image segm
 
 <br/> <div align=center><img src="figs/MethodOverview.png" width="500px"/></div>
 
-## Requirements
+## Installation
 
-This code was developed with `python==3.10`.
+For Conda users, you can create a new Conda environment using
 
 ```
-ipykernel==6.9.1
-simpleitk==2.2.1
-scipy==1.9.1
-matplotlib==3.6.3
-torch==1.12.1
-torchvision==0.13.1
-nibabel==2.4.1
-future==0.18.2
-threadpoolctl==2.1.0
-tensorboard_logger==0.1.0
-tensorboard==2.9.0
-tensorflow==2.9.1
-future==0.18.2
-threadpoolctl==2.1.0
-pandas==1.5.2
-scikit-image==0.19.3
-einops==0.6.0
-timm==0.6.12
+conda create -n jcsaugment python=3.10
+```
+
+after activating the environment with 
+```
+source activate jcsaugment
+```
+try to install all the dependencies with
+
+```
+pip install -r requirements.txt
+```
+also install the conda environment for the jupyter notebook kernel.
+
+```
+python -m ipykernel install --user --name=jcsaugment
 ```
 
 ## Data and preprocessing
