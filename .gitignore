@@ -1,4 +1,8 @@
-/datadownload/*
-/datapreprocessed/*
+/datadownload/KiTS/*
+/datadownload/MnMCardiac/*
+/datadownload/Prostate/*
+/datapreprocessed/KiTS/*
+/datapreprocessed/MnMCardiac/*
+/datapreprocessed/Prostate/*
 /.ipynb_checkpoints
 /output/*
