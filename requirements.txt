@@ -4,7 +4,7 @@ scipy==1.9.1
 matplotlib==3.6.3
 torch==1.12.1
 torchvision==0.13.1
-nibabel==2.4.1
+nibabel
 future==0.18.2
 threadpoolctl==2.1.0
 tensorboard_logger==0.1.0
