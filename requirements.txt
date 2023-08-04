@@ -16,4 +16,4 @@ pandas==1.5.2
 scikit-image==0.19.3
 einops==0.6.0
 timm==0.6.12
-numpy==1.21.0
+numpy==1.22.0
